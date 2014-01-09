@@ -1,82 +1,106 @@
 #main {
-    width: 600px;
-    padding-top: 40px;
-    margin: 0 auto;
+	width: 600px;
+	padding-top: 40px;
+	margin: 0 auto;
 }
-    #txtContainer {
-    width: 400px;
+#txtContainer {
+	width: 400px;
 }
-    #description {
-    -webkit-box-shadow: 0px 0px 17px rgb(194, 194, 194);
-    box-shadow: 0px 0px 17px rgb(194, 194, 194);
+#description {
+	-webkit-box-shadow: 0px 0px 17px rgb(194, 194, 194);
+	box-shadow: 0px 0px 17px rgb(194, 194, 194);
 }
-    #todos {
-    border: 1px solid rgb(218, 218, 218);
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    margin-top: -7px;
+#todos {
+	border: 1px solid rgb(218, 218, 218);
+	border-bottom-left-radius: 9px;
+	border-bottom-right-radius: 9px;
+	margin-top: px;
+	border-radius: 10px;
+	box-shadow: inset 0px 0px 30px 2px rgba(57, 57, 57, 0.22);
 }
-    #btClear {
-    padding-left: 0.5%;
+
+.bt {
+	background: #006699;
+	border: none;
+	color: #ffffff;
+	font: 13px Tahoma, Arial, sans-serif;
+	padding: 10px 15px;
+	text-decoration: none;
+	cursor: pointer;
+	border: 1px solid #333;
+	letter-spacing: 1px;
+	text-shadow: 0px -1px 0px #333333;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #8b8b8b), color-stop(0.5, #707070), color-stop(0.5, #5e5e5e), color-stop(1, #777777));
+	*/
 }
-    #add {
-    width: 130px;
+
+#btClear {
+	padding-left: 0.5%;
+	
 }
-    .item {
-    padding: 5px;
-    border: 1px solid rgb(165, 165, 165);
-    border-radius: 5px 5px 5px 5px;
-    border-style: ridge ridge none ridge;
-    font-size: 16px;
+#add {
+	width: 130px;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #8b8b8b), color-stop(0.5, #707070), color-stop(0.5, #285c02), color-stop(1, #23f508));
 }
-    #check {
-    padding-left: 71px;
-    margin: 8px;
-    margin-right: 13px;
+
+#clear
+{
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #8b8b8b), color-stop(0.5, #707070), color-stop(0.5, #7e0a0a), color-stop(1, #f50808));
 }
-    .lineThrough {
-    text-decoration: line-through;
-    color: rgba(0, 0, 0, 0.34);
+
+
+#deleteSelec
+{
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #8b8b8b), color-stop(0.5, #707070), color-stop(0.5, #7e0a0a), color-stop(1, #f50808));
 }
-    #detailTable {
-    width: 600px;
-    border-collapse: separate;
-    border-spacing: 9px 1px;
+
+.item {
+	padding: 5px;
+	margin-left: 1px;
+	box-shadow: inset 0px 0px 30px 1px rgba(57, 57, 57, 0.13);
+/*	box-shadow: inset 10px 10px 1px 1px rgb(3, 158, 255);*/
+  width: 100%;
+	border: 1px solid;
+	border-radius: 10px 0px 0px 10px;
+	border-color: rgba(163, 163, 163, 0.47);
+	
+/*
+	padding: 5px;
+	border: 1px solid rgb(165, 165, 165);
+	border-radius: 5px 5px 5px 5px;
+	border-style: ridge ridge none ridge;
+	font-size: 16px;
+*/
 }
-    .styleCell {
-    border-radius: 5px 5px 5px 5px;
-    -webkit-box-shadow: 0px 0px 10px rgb(180, 180, 180);
-    box-shadow: 0px 0px 10px rgb(180, 180, 180);
-    padding: 1px 1px 1px 11px;
+#check {
+	padding-left: 71px;
+	margin: 8px;
+	margin-right: 13px;
 }
-    #lblTotal {
-    font-size: 20px;
+.lineThrough {
+	text-decoration: line-through;
+	color: rgba(0, 0, 0, 0.34);
 }
-    #lblComplete {
-    font-size: 20px;
-    color: #27ff00;
+#detailTable {
+	width: 600px;
+	border-collapse: separate;
+	border-spacing: 9px 1px;
 }
-    #lblToDo {
-    font-size: 20px;
-    color: red;
+
+#lblTotal {
+	font-size: 20px;
 }
-    .btDelete {
-    width: 0px;
-    margin-top: -5px;
-    margin-bottom: 4px;
+#lblComplete {
+	font-size: 20px;
+	color: #27ff00;
 }
-    #deleteSelec {
-    width: 196px;
+#lblToDo {
+	font-size: 20px;
+	color: red;
 }
-    #time {
-    font-style: oblique;
-}
-    .timeP {
-    text-decoration: underline;
-    -webkit-box-shadow: 0px 0px 10px rgb(190, 190, 190);
-    box-shadow: 0px 0px 10px rgb(190, 190, 190);
-    border-radius: 20px;
-    margin-top: 2px;
-    padding: 6px;
-    width: 120px;
-}
+
+
+
+

@@ -25,28 +25,19 @@
                 <table>
                     <tr>
                         <td>
-                            <div class="input-group input-group-lg" id="txtContainer">
-                                <span class="input-group-addon"></span>
-                                <input id="description" name="description" type="text" class="form-control" placeholder="Type Here">
-                            </div>
+                            <div class="input-group input-group-lg" id="todotext">
+							<span class="input-group-addon">TO-DO</span>
+							<input id="description" name="description" type="text" class="form-control" placeholder="Activity">
+					</div>
                         </td>
                         <td>
-                            <input id="add" class="btn btn-primary" type="button" value="Add" />
+                            <input id="add" class="bt" type="button" value="Add" />
                         </td>
                         <td id="btClear">
-                            <button id="clear" class="btn btn-warning">Clear</button>
+                            <button id="clear" class="bt">Clear</button>
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                        <p class="timeP">Time : <span id="time"> </span>  </p>
-                        </td>
-                        <td>
-                            <div class="btDelete">
-                                <input id="deleteSelec" class="btn btn-danger" type="button" value="Clear Selection" />
-                            </div>
-                        </td>
-                    </tr>
+                   
                 </table>
 
             </form>
@@ -57,16 +48,21 @@
             <table id="detailTable">
                 <td class="styleCell">
                     Total:
-                    <span class="lblTotal"></span>
+                    <span id="lblTotal"></span>
                 </td>
-                <td class="styleCell">
-                    Complete:
-                    <span id="lblComplete"></span>
-                </td>
+               
                 <td class="styleCell">
                     To do:
                     <span id="lblToDo"></span>
+					  
                 </td>
+				
+				 <td class="styleCell">
+                    Complete:
+                    <span id="lblComplete"></span>
+					 <input id="deleteSelec" class="bt" type="button" value="Delte"/>
+                </td>
+				
             </table>
         </div>
     </section>
