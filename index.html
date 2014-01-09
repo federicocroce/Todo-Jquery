@@ -1,90 +1,77 @@
 <!DOCTYPE html>
+<!--<html lang="en" manifest="manifest.appcache">-->
+<html>
 
-<html data-brackets-id="1904"><head data-brackets-id="1905">
-	<meta data-brackets-id="1906" charset="utf-8">
-	<script data-brackets-id="1907" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-	</script>
-	<link data-brackets-id="1908" rel="stylesheet" href="estilo.css">
-	<title data-brackets-id="1909">Todo List App</title>
+<head>
+    <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Style.css">
 
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
 
-	<!-- Latest compiled and minified CSS -->
-	<link data-brackets-id="1910" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
-	<!-- Optional theme -->
-	<link data-brackets-id="1911" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script data-brackets-id="1912" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-
+    <title>Todo JQuery</title>
 </head>
 
+<body>
+    <section id="main">
+        <div id="container">
+            <form id="form" action="#" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="input-group input-group-lg" id="txtContainer">
+                                <span class="input-group-addon"></span>
+                                <input id="description" name="description" type="text" class="form-control" placeholder="Type Here">
+                            </div>
+                        </td>
+                        <td>
+                            <input id="add" class="btn btn-primary" type="button" value="Add" />
+                        </td>
+                        <td id="btClear">
+                            <button id="clear" class="btn btn-warning">Clear</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <p class="timeP">Time : <span id="time"> </span>  </p>
+                        </td>
+                        <td>
+                            <div class="btDelete">
+                                <input id="deleteSelec" class="btn btn-danger" type="button" value="Clear Selection" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
 
-<body data-brackets-id="1913" styles="background-color:#e3e3e3" style="">
+            </form>
 
-	<section data-brackets-id="1914">
-		<form data-brackets-id="1915" id="form">
-			<table data-brackets-id="1916" id="maintable">
-				<tbody><tr data-brackets-id="1917">
-					<td data-brackets-id="1918">
-						<div data-brackets-id="1919" class="input-group input-group-lg" id="todotext">
-							<span data-brackets-id="1920" class="input-group-addon">TO-DO</span>
-							<input data-brackets-id="1921" id="description" name="description" type="text" class="form-control" placeholder="Activity">
-					</div></td>
-					
-						<td data-brackets-id="1922">
-							<input data-brackets-id="1923" id="add" class="btn btn-primary btn-lg " type="submit" value="Add">
-						</td>
-						<td data-brackets-id="1924">
-							<button data-brackets-id="1925" id="delete" class="btn btn-primary btn-lg ">Delete</button>
-						</td>
-						<td data-brackets-id="1926">
-							<button data-brackets-id="1927" id="clear" class="btn btn-primary btn-lg bt ">Clear All</button>
-						</td>
-					
-				</tr>
-			</tbody></table>
+            <div id="alert"></div>
+            <ul id="todos"></ul>
 
+            <table id="detailTable">
+                <td class="styleCell">
+                    Total:
+                    <span class="lblTotal"></span>
+                </td>
+                <td class="styleCell">
+                    Complete:
+                    <span id="lblComplete"></span>
+                </td>
+                <td class="styleCell">
+                    To do:
+                    <span id="lblToDo"></span>
+                </td>
+            </table>
+        </div>
+    </section>
+    <script src="Script.js"></script>
+    <script src="jTime.js"></script>
+</body>
 
-
-			
-
-
-
-		</form>
-
-		<div data-brackets-id="1928" id="alert"></div>
-		<ul data-brackets-id="1929" id="todos"><li class="list"><input class="check" name="check" type="checkbox">asd</li><li class="list"><input class="check" name="check" type="checkbox">jk</li><li class="list"><input class="check" name="check" type="checkbox">hj</li></ul>
-
-
-
-		<table data-brackets-id="1930" id="tablefoot">
-			<tbody><tr data-brackets-id="1931">
-				<td data-brackets-id="1932">
-					<p data-brackets-id="1933" id="total" class="textfoot">Total: 3</p>
-				</td>
-				<td data-brackets-id="1934">
-					<p data-brackets-id="1935" id="finish" class="textfoot">Finish: 0</p>
-				</td>
-				<td data-brackets-id="1936">
-					<p data-brackets-id="1937" id="pending" class="textfoot">Pending: 3</p>
-				</td>
-			</tr>
-		</tbody></table>
-
-
-
-
-		<!--
-		
-		<p id="finish">Algo</p>
-		<p id="pending">Algo</p>
--->
-	</section>
-	<script data-brackets-id="1938" src="app.js"></script>
-
-
-
-
-
-</body></html>
+</html>

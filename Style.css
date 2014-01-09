@@ -1,0 +1,82 @@
+#main {
+    width: 600px;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+    #txtContainer {
+    width: 400px;
+}
+    #description {
+    -webkit-box-shadow: 0px 0px 17px rgb(194, 194, 194);
+    box-shadow: 0px 0px 17px rgb(194, 194, 194);
+}
+    #todos {
+    border: 1px solid rgb(218, 218, 218);
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    margin-top: -7px;
+}
+    #btClear {
+    padding-left: 0.5%;
+}
+    #add {
+    width: 130px;
+}
+    .item {
+    padding: 5px;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 5px 5px 5px 5px;
+    border-style: ridge ridge none ridge;
+    font-size: 16px;
+}
+    #check {
+    padding-left: 71px;
+    margin: 8px;
+    margin-right: 13px;
+}
+    .lineThrough {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.34);
+}
+    #detailTable {
+    width: 600px;
+    border-collapse: separate;
+    border-spacing: 9px 1px;
+}
+    .styleCell {
+    border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 0px 0px 10px rgb(180, 180, 180);
+    box-shadow: 0px 0px 10px rgb(180, 180, 180);
+    padding: 1px 1px 1px 11px;
+}
+    #lblTotal {
+    font-size: 20px;
+}
+    #lblComplete {
+    font-size: 20px;
+    color: #27ff00;
+}
+    #lblToDo {
+    font-size: 20px;
+    color: red;
+}
+    .btDelete {
+    width: 0px;
+    margin-top: -5px;
+    margin-bottom: 4px;
+}
+    #deleteSelec {
+    width: 196px;
+}
+    #time {
+    font-style: oblique;
+}
+    .timeP {
+    text-decoration: underline;
+    -webkit-box-shadow: 0px 0px 10px rgb(190, 190, 190);
+    box-shadow: 0px 0px 10px rgb(190, 190, 190);
+    border-radius: 20px;
+    margin-top: 2px;
+    padding: 6px;
+    width: 120px;
+}
