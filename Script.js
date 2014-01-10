@@ -75,6 +75,10 @@ var mInit = (function () {
 })();
 
 
+
+
+
+
 var methodsToDo = (function () {
 
 	//	var elemntsList = 0;
@@ -124,7 +128,7 @@ var methodsToDo = (function () {
 
 			var todos = $('#todos').html();
 			localStorage.setItem('todos', todos);
-			$('#form')[0].reset();
+			location.reload();
 			mInit.updateVarPublic();
 		});
 	};
