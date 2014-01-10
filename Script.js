@@ -124,7 +124,7 @@ var methodsToDo = (function () {
 
 			var todos = $('#todos').html();
 			localStorage.setItem('todos', todos);
-			location.reload();
+			$('#form')[0].reset();
 			mInit.updateVarPublic();
 		});
 	};
